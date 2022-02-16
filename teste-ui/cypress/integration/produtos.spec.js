@@ -27,4 +27,13 @@ describe('Funcionalidade Página de produtos', () => {
 
         cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho')
     })
+
+    it.only('Deve adicionar u produto ao carrinho - Usando Comando Customizado', () => {
+        cy.addProduto('Abominable Hoodie', 3, 'XS', 'Green')
+
+        cy.visit('produtos/')
+        cy.addProduto('Abominable Hoodie', 3, 'XS', 'Red')
+    });
+
+
 })

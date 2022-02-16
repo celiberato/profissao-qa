@@ -26,4 +26,11 @@ describe('Funcionalidade Pré-Cadastro', () => {
 
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso')
     });
+
+
+    it('Deve completar o pré-cadastro com sucesso usando Comandos Customizados', () => {
+        const randomEmail = (Math.random()*1000) + '@teste.com';
+
+        cy.preCadastro(randomEmail, 'teste@teste.com')
+    });
 });

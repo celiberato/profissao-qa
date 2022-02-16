@@ -1,11 +1,15 @@
 ACESSIBILIDADE:
 wave, axe e lighthouse
 
-
+--------------
 CYPRESS:
 npm init -y
 yarn add cypress --dev
 npx cypress open
+npm run cy:run
+npm run cy:open
+
+--------------
 
 plugins:
 es6 mocha snippets
@@ -13,3 +17,17 @@ bracket pair colorizer 2
 cypress snippets
 material icon theme
 visual studio intellicode
+
+----------
+teste_001@teste.com
+teste@teste.com
+
+----------
+yarn add @faker-js/faker -D
+
+----------
+
+cypress dashboard
+
+celiberato@hotmail.com
+xxxcypress123
