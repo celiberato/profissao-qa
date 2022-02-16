@@ -1,5 +1,6 @@
 {
     "baseUrl": "http://lojaebac.ebaconline.art.br/",
     "projectId": "u9eiq1",
-    "defaultCommandTimeout": 30000
+    "defaultCommandTimeout": 30000,
+    "multiple": true
 }
