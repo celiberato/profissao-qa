@@ -1,0 +1,12 @@
+POSTMAN
+
+
+npm install -g newman newman-reporter-html
+
+------------
+serverest:
+npx serverest@latest
+
+node invocarPostmanServeRest.js
+
+-------------

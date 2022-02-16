@@ -1,0 +1,15 @@
+{
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "invocarPostmanServeRest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^4.6.1",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
