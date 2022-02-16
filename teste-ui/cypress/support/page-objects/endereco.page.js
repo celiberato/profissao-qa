@@ -22,7 +22,7 @@ class EnderecoPage {
 
         cy.get('#billing_phone').clear().type(telefone)
 
-        cy.get('.button').click()
+        cy.focused().click()
     }
 
     editarEnderecoEntrega(nome,sobrenome, empresa, pais, endereco, numero, cidade, estado, cep){
@@ -45,7 +45,7 @@ class EnderecoPage {
 
         cy.get('#shipping_postcode').clear().type(cep)
 
-        cy.get('.button').click()
+        cy.focused().click()
     }
 }
 
