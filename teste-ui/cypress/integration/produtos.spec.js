@@ -23,16 +23,18 @@ describe('Funcionalidade Página de produtos', () => {
 
         cy.get('.single_add_to_cart_button').click()
 
-        //cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
+        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
 
         cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho')
     })
 
-    it.only('Deve adicionar u produto ao carrinho - Usando Comando Customizado', () => {
+    it('Deve adicionar u produto ao carrinho - Usando Comando Customizado', () => {
         cy.addProduto('Abominable Hoodie', 3, 'XS', 'Green')
+        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 3)
 
         cy.visit('produtos/')
         cy.addProduto('Abominable Hoodie', 3, 'XS', 'Red')
+        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 6)
     });
 
 

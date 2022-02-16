@@ -5,7 +5,7 @@ import EnderecoPage from '../support/page-objects/endereco.page'
 const dadosEnderecoFaturamento = require('../fixtures/endereco-faturamento')
 const dadosEnderecoEntrega = require('../fixtures/endereco-entrega')
 
-describe('Funcionalidade Endereços - Faruramento e Entrega', () => {
+describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
 
     beforeEach(() => {
         cy.visit('minha-conta')
