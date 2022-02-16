@@ -6,7 +6,7 @@ const environment = require.resolve("./environment.json");
 newman.run({
     collection, 
     environment,
-    reporters: 'html',
+    reporters: 'htmlextra',
     reporter: {
         html: {
             export: './htmlResults.html'

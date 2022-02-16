@@ -11,5 +11,8 @@
   "dependencies": {
     "newman": "^4.6.1",
     "newman-reporter-html": "^1.0.5"
+  },
+  "devDependencies": {
+    "newman-reporter-htmlextra": "^1.22.7"
   }
 }

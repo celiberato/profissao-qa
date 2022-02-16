@@ -1,11 +1,18 @@
 POSTMAN
 
 
-npm install -g newman newman-reporter-html
+yarn add newman newman-reporter-html newman-reporter-htmlextra --dev
 
 ------------
 serverest:
 npx serverest@latest
+
+
+
+------------------
+newman run postman_collection.json -e environment.json -r htmlextra
+
+ou 
 
 node invocarPostmanServeRest.js
 
