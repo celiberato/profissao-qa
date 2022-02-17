@@ -18,4 +18,4 @@ newman.run({
 });
 
 
-//newman run postman_collection.json -e environment.json
+//newman run postman_collection.json -e environment.json -r htmlextra

@@ -17,7 +17,3 @@ ou
 node invocarPostmanServeRest.js
 
 -------------
-
-npm init -y
-npm install cypress -D
-npx cypress open
